@@ -4,6 +4,28 @@
     --black: #000;
     --medium-gray: #ccd5e2;
     --yellow: #d3be00;
+    font-family: Inter;
+    font-size:16px;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-size:1.6rem;
+}
+
+h4 {
+    font-size:1.42rem;
+}
+
+p {
+    font-size: 1rem;
 }
 
 body {
@@ -12,13 +34,43 @@ body {
     display:grid;
     grid-template-columns: minmax(175px, 1fr) 5fr;
     grid-template-rows: 1fr 4fr;
+    color: var(--white);
 }
 
+/**/
 .sidebar {
     grid-column: 1;
     grid-row: 1 / -1;
     background-color: var(--baby-blue);
+    display:grid;
+    grid-template-rows: 100px 300px 300px;
+    gap: 40px;
 }
+
+.title  {
+    display:flex;
+    align-items:center;
+    justify-content: left;
+    padding-left: 20px;
+    gap:10px;
+}
+
+.flask-logo {
+    width:50px;
+}
+
+.site-actions, .account-actions {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-auto-rows: 30px;
+    align-items: center;
+    gap:15px;
+}
+
+.site-actions img, .account-actions img {
+    justify-self: end;
+}
+/**/
 
 .header {
     grid-column: 2;
