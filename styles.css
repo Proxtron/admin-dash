@@ -1,0 +1,31 @@
+:root {
+    --baby-blue: #0099ff;
+    --white: #FFF;
+    --black: #000;
+    --medium-gray: #ccd5e2;
+    --yellow: #d3be00;
+}
+
+body {
+    height:100vh;
+    width:100vw;
+    display:grid;
+    grid-template-columns: minmax(175px, 1fr) 5fr;
+    grid-template-rows: 1fr 4fr;
+}
+
+.sidebar {
+    grid-column: 1;
+    grid-row: 1 / -1;
+    background-color: var(--baby-blue);
+}
+
+.header {
+    grid-column: 2;
+    grid-row: 1;
+    background-color: var(--white);
+}
+
+.main {
+    background-color: var(--medium-gray);
+}
